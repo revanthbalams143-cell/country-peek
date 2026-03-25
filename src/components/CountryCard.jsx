@@ -38,6 +38,12 @@ function CountryCard({ country }) {
           type="button"
           className={`fav-btn ${isSaved ? 'fav-btn--saved' : ''}`}
           onClick={handleFavouriteClick}
+          aria-label={
+            isSaved
+              ? `Remove ${name?.common ?? 'country'} from favourites`
+              : `Save ${name?.common ?? 'country'} to favourites`
+          }
+          aria-pressed={isSaved}
         >
           {isSaved ? '♥ Saved' : '♡ Save'}
         </button>
