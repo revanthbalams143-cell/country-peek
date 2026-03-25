@@ -136,6 +136,23 @@
   padding: 14px;
 }
 
+.fav-btn {
+  margin-top: 12px;
+  padding: 6px 10px;
+  border: 1px solid var(--input-border);
+  background: transparent;
+  color: var(--text);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.fav-btn--saved {
+  background: #fef2f2;
+  border-color: #f87171;
+  color: #b91c1c;
+}
+
 .card__name {
   margin: 0 0 10px;
   font-size: 1.1rem;
